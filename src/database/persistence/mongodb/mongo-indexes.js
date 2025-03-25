@@ -1,5 +1,4 @@
 
-const mongoose = require('mongoose');
 const CustomerModel = require('../models/customer.model');
 const SubscriptionModel = require('../models/subscription.model');
 
