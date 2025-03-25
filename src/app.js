@@ -2,7 +2,6 @@ const express = require('express');
 const cors = require('cors');
 const { configureContainer } = require('./container');
 const { createRateLimiter, createStrictRateLimiter } = require('./utils/rate-limiter.middleware');
-const config = require('./config/config');
 const authMiddleware = require('./utils/authMiddleware');
 const createMongoSanitizer = require('./utils/mongoSanitize.middleware');
 

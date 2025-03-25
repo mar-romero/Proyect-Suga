@@ -243,7 +243,7 @@ describe('RenewSubscriptionUseCase', () => {
     
     mockSubscriptionRepository.findById.mockResolvedValue(mockSubscription);
     
-    mockSubscriptionRepository.update.mockImplementation((id, updateData) => {
+    mockSubscriptionRepository.update.mockImplementation((_id, _updateData) => {
       return {
         ...mockSubscription,
         status: 'past_due',
